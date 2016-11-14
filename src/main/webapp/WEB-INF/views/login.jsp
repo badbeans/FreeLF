@@ -24,7 +24,7 @@
     <input type="submit" id="loginBtn" value="Login" />
 </div>
 
-<script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="/resources/js/jquery-1.8.3.js"></script>
 <script type="text/javascript">
         $("#loginBtn").click(function() {
             alert(0)
@@ -41,7 +41,7 @@
                 dataType : "json",
                 data : user,
                 contentType : "application/x-www-form-urlencoded;charset=UTF-8",
-                url : "user/login",
+                url : "/user/login.htmls",
                 // 同步async: false,（默认是true）;
                 // 如上：false为同步，这个方法中的Ajax请求将整个浏览器锁死，
                 // 只有test.jsp执行结束后，才可以执行其它操作。

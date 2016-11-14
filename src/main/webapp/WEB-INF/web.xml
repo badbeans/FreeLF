@@ -26,6 +26,7 @@
     <servlet-mapping>
         <servlet-name>rest</servlet-name>
         <url-pattern>*.htmls</url-pattern>
+        <!--<url-pattern>/</url-pattern>-->
     </servlet-mapping>
 
     <filter-mapping>
