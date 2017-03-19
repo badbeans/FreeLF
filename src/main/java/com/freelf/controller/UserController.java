@@ -1,7 +1,7 @@
-package com.muslf.controller;
+package com.freelf.controller;
 
-import com.muslf.model.MuslfUserEntity;
-import com.muslf.service.IUserService;
+import com.freelf.model.MuslfUserEntity;
+import com.freelf.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -33,5 +33,14 @@ public class UserController {
         boolean loginResult = userService.isExist(user);
         map.put("loginResult", loginResult);
         return map;
+    }
+
+    @RequestMapping(value="/myTest")
+    public String myTest(MuslfUserEntity user){
+        Map<String,Object> map = new HashMap<String,Object>();
+        System.out.println(user.toString());
+        boolean loginResult = userService.isExist(user);
+        map.put("loginResult", loginResult);
+        return "/login";
     }
 }

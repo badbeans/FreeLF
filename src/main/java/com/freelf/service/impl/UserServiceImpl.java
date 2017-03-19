@@ -1,8 +1,8 @@
-package com.muslf.service.impl;
+package com.freelf.service.impl;
 
-import com.muslf.dao.IUserDao;
-import com.muslf.model.MuslfUserEntity;
-import com.muslf.service.IUserService;
+import com.freelf.dao.IUserDao;
+import com.freelf.model.MuslfUserEntity;
+import com.freelf.service.IUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

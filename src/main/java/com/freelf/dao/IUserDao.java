@@ -1,6 +1,6 @@
-package com.muslf.dao;
+package com.freelf.dao;
 
-import com.muslf.model.MuslfUserEntity;
+import com.freelf.model.MuslfUserEntity;
 
 /**
  * Created by RENQI on 2016/11/13.

@@ -1,4 +1,4 @@
-package com.muslf.model;
+package com.freelf.model;
 
 
 import javax.persistence.*;

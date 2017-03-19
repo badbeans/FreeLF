@@ -1,7 +1,7 @@
-package com.muslf.dao.impl;
+package com.freelf.dao.impl;
 
-import com.muslf.dao.IUserDao;
-import com.muslf.model.MuslfUserEntity;
+import com.freelf.dao.IUserDao;
+import com.freelf.model.MuslfUserEntity;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

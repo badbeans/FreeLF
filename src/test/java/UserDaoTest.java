@@ -1,5 +1,5 @@
 //import com.muslf.dao.IUserDao;
-//import com.muslf.model.MuslfUserEntity;
+//import com.freelf.model.MuslfUserEntity;
 //import org.junit.Test;
 //import org.junit.runner.RunWith;
 //import org.springframework.test.context.ContextConfiguration;

@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
          id="WebApp_ID" version="2.5">
 
-    <display-name>MusLF</display-name>
+    <display-name>FreeLF</display-name>
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
@@ -63,13 +63,13 @@
 
     <!-- 监听servletContext，启动contextConfigLocation中的spring配置信息 -->
     <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
 
-    <!-- 防止spring内存溢出监听器 -->
-    <listener>
-        <listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
-    </listener>
+        <!-- 防止spring内存溢出监听器 -->
+<listener>
+<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+</listener>
 
 
 
