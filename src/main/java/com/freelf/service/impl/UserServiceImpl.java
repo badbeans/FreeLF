@@ -1,7 +1,7 @@
 package com.freelf.service.impl;
 
 import com.freelf.dao.IUserDao;
-import com.freelf.model.MuslfUserEntity;
+import com.freelf.model.FreelfUserEntity;
 import com.freelf.service.IUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,7 +18,7 @@ public class UserServiceImpl implements IUserService {
     private IUserDao userDao;
 
     @Override
-    public boolean isExist(MuslfUserEntity user) {
+    public boolean isExist(FreelfUserEntity user) {
         return userDao.isExist(user);
     }
 }

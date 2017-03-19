@@ -1,7 +1,7 @@
 package com.freelf.dao.impl;
 
 import com.freelf.dao.IUserDao;
-import com.freelf.model.MuslfUserEntity;
+import com.freelf.model.FreelfUserEntity;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -22,9 +22,9 @@ public class UserDaoImpl implements IUserDao {
     }
 
     @Override
-    public boolean isExist(MuslfUserEntity user) {
+    public boolean isExist(FreelfUserEntity user) {
         Session session = this.getSession();
-        String hql = "from MuslfUserEntity where username =? and userpwd = ?";
+        String hql = "from FreelfUserEntity where username =? and userpwd = ?";
         Query query = session.createQuery(hql);
         query.setString(0, user.getUsername());
         query.setString(1, user.getUserpwd());

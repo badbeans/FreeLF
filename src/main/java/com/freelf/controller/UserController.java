@@ -1,6 +1,6 @@
 package com.freelf.controller;
 
-import com.freelf.model.MuslfUserEntity;
+import com.freelf.model.FreelfUserEntity;
 import com.freelf.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,7 +27,7 @@ public class UserController {
 
     @ResponseBody
     @RequestMapping(value="/login", method = RequestMethod.POST)
-    public Map<String,Object> login(MuslfUserEntity user){
+    public Map<String,Object> login(FreelfUserEntity user){
         Map<String,Object> map = new HashMap<String,Object>();
         System.out.println(user.toString());
         boolean loginResult = userService.isExist(user);
@@ -36,7 +36,7 @@ public class UserController {
     }
 
     @RequestMapping(value="/myTest")
-    public String myTest(MuslfUserEntity user){
+    public String myTest(FreelfUserEntity user){
         Map<String,Object> map = new HashMap<String,Object>();
         System.out.println(user.toString());
         boolean loginResult = userService.isExist(user);

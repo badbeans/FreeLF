@@ -18,7 +18,7 @@
 //
 //    @Test
 //    public void testIsExist(){
-//        MuslfUserEntity user = new MuslfUserEntity();
+//        FreelfUserEntity user = new FreelfUserEntity();
 //        user.setUsername("zhangsan");
 //        user.setUserpwd("123456");
 //        boolean result = userService.isExist(user);

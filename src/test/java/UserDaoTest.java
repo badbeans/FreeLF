@@ -1,5 +1,5 @@
 //import com.muslf.dao.IUserDao;
-//import com.freelf.model.MuslfUserEntity;
+//import com.freelf.model.FreelfUserEntity;
 //import org.junit.Test;
 //import org.junit.runner.RunWith;
 //import org.springframework.test.context.ContextConfiguration;
@@ -23,7 +23,7 @@
 //
 //    @Test
 //    public void testIsExist() {
-//        MuslfUserEntity user = new MuslfUserEntity();
+//        FreelfUserEntity user = new FreelfUserEntity();
 //        user.setUsername("zhangsan");
 //        user.setUserpwd("123456");
 //        boolean result = userDao.isExist(user);

@@ -6,9 +6,9 @@ import javax.persistence.*;
 /**
  * Created by RENQI on 2016/11/13.
  */
-@Table(name = "muslf_user")
+@Table(name = "freelf_user")
 @Entity
-public class MuslfUserEntity {
+public class FreelfUserEntity {
     private String id;
     private String username;
     private String userpwd;
