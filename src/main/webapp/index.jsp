@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%@ page contentType="text/html; charset=utf-8" %>
 
-    <title>Flat - Responsive HTML Template</title>
+    <title>FreeLF 欢迎您！</title>
     <!-- load stylesheets -->
     <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,400">    <!-- Google web font "Open Sans" -->
     <link rel="stylesheet" href="/resources/font-awesome-4.6.3/css/font-awesome.min.css">            <!-- Font awesome -->
@@ -38,19 +38,19 @@
             <div class="collapse navbar-toggleable-sm text-xs-center text-uppercase tm-navbar" id="tmNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item active selected">
-                        <a class="nav-link" href="#0" data-no="1">Intro <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#0" data-no="1">简介<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="2">About</a>
+                        <a class="nav-link" href="#0" data-no="2">袅袅之音</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="3">Gallery</a>
+                        <a class="nav-link" href="#0" data-no="3">待定</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="4">Video</a>
+                        <a class="nav-link" href="#0" data-no="4">待定</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#0" data-no="5">Contact</a>
+                        <a class="nav-link" href="#0" data-no="5">联系我</a>
                     </li>
                 </ul>
             </div>
@@ -296,6 +296,11 @@
         /* Collapse menu after click
          -----------------------------------------*/
         $('#tmNavbar a').click(function(){
+//            if($(this).data("no") == 2){
+//                window.location.href = "http://localhost:8989/demo.html";
+//                return;
+//            }
+
             $('#tmNavbar').collapse('hide');
 
             adjustHeightOfPage($(this).data("no")); // Adjust page height
